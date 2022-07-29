@@ -1,7 +1,7 @@
-import buildings from './images/buildings.svg';
+import buildings from './images/buildings.jpg';
 import './App.css';
-import bricks from './images/bricks.svg';
-import excavator from './images/excavator1.svg';
+import bricks from './images/bricks.jpg';
+import excavator from './images/excavator.jpg';
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
           Sed ut perspiciatis eu posso facilmente assassinar um leão da montanha doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
         </div>
         <div>
-          <button className='mainButton' style={{ backgroundImage: `url(${bricks})`, backgroundSize: "25%" }}>
+          <button className='mainButton' style={{ backgroundImage: `url(${bricks})`, backgroundSize: "100%" }}>
             CLICA AQUI <br></br>
             RAPIDÃO
           </button>
