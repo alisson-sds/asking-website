@@ -1,8 +1,10 @@
-import buildings from './images/buildings.svg'
-import './App.css'
-import bricks from './images/bricks.svg'
-import excavator from './images/excavator1.svg'
+import '../App.css'
+
 import { Link } from 'react-router-dom'
+
+import bricks from '../images/bricks.jpg'
+import buildings from '../images/buildings.jpg'
+import excavator from '../images/excavator.jpg'
 
 const Page1 = () => {
   return (
@@ -25,10 +27,12 @@ const Page1 = () => {
           architecto
         </div>
         <div>
-          <button className='mainButton' style={{ backgroundImage: `url(${bricks})`, backgroundSize: '25%' }}>
-            CLICA AQUI <br></br>
-            RAPIDÃO
-          </button>
+          <Link to='/page2'>
+            <button className='mainButton' style={{ backgroundImage: `url(${bricks})`, backgroundSize: '25%' }}>
+              CLICA AQUI <br></br>
+              RAPIDÃO
+            </button>
+          </Link>
         </div>
       </div>
       <nav>
