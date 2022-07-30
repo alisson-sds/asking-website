@@ -35,19 +35,6 @@ const Page1 = () => {
           </Link>
         </div>
       </div>
-      <nav>
-        <ul>
-          <li>
-            <Link to='/'>Home</Link>
-          </li>
-          <li>
-            <Link to='/page2'>Page 2</Link>
-          </li>
-          <li>
-            <Link to='/page3'>Page 3</Link>
-          </li>
-        </ul>
-      </nav>
       <footer style={{ backgroundImage: `url(${excavator})`, backgroundSize: '100%', height: '264px' }}></footer>
     </div>
   )

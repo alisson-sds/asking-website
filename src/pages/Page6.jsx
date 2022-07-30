@@ -3,11 +3,11 @@ import '../App.css'
 import bricks from '../images/bricks.jpg'
 import bolso from '../images/bolso.png'
 
-const Page2 = () => {
+const Page6 = () => {
   return (
     <div style={{ backgroundImage: `url(${bricks})`, backgroundSize: '100%', height: '844px', backgroundSize: '350%' }}>
       <img className='centerImg' src={bolso} />
-      <Link to='/page3'>
+      <Link to='/page7'>
         <button className='mainButton' style={{ backgroundColor: '#502923', marginLeft: '100px', marginTop: '40px' }}>
           CLICA AQUI <br></br>
           RAPIDÃO
@@ -17,4 +17,4 @@ const Page2 = () => {
   )
 }
 
-export default Page2
+export default Page6
