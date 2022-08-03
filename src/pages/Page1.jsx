@@ -28,7 +28,7 @@ const Page1 = () => {
         </div>
         <div>
           <Link to='/page2'>
-            <button className='mainButton' style={{ backgroundImage: `url(${bricks})`, backgroundSize: '25%' }}>
+            <button className='mainButton' style={{ backgroundImage: `url(${bricks})`, backgroundSize: '100%' }}>
               CLICA AQUI <br></br>
               RAPIDÃO
             </button>

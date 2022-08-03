@@ -7,7 +7,7 @@ import { useState } from 'react'
 
 const Page7 = () => {
   // const [noButtonTranslate, setNoButtonTranslate] = useState([90, 47])
-  const [noButtonTranslate, setNoButtonTranslate] = useState([70, 47])
+  const [noButtonTranslate, setNoButtonTranslate] = useState([80, 47])
 
   const handleTranslateButton = () => {
     const x = Math.random() * 95
@@ -34,7 +34,7 @@ const Page7 = () => {
         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
         <a
           // style={{ transform: `translate(${noButtonTranslate[0]}px, ${noButtonTranslate[1]}px)` }}
-          style={{ position: 'absolute', top: `${noButtonTranslate[0]}%`, left: `${noButtonTranslate[1]}%` , opacity: '25%'}}
+          style={{ position: 'absolute', top: `${noButtonTranslate[0]}%`, left: `${noButtonTranslate[1]}%` }}
           onClick={handleTranslateButton}
         >
           nao
