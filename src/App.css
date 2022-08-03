@@ -9,7 +9,6 @@
 .centerImg {
   border: 5px solid white;
   margin-top: 200px;
-  margin-left: 43px;
   width: 296px;
   height: 350px;
 }
@@ -20,7 +19,7 @@
 
 .mainDivAsk {
   background-color: #d9d9d9;
-  height: 844px;
+  height: 100%;
 }
 
 .mainTitles {
@@ -53,7 +52,7 @@
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   font-weight: 800;
-  margin-bottom: 10px;
+  margin-bottom: 100px;
   height: 65px;
   color: #502923;
 }
@@ -88,6 +87,16 @@
   padding: 5px 25px;
 }
 
+.yesButton {
+  font-size: 20px;
+  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+  border: 5px solid white;
+  color: white;
+  justify-content: center;
+  padding: 10px 50px;
+}
+
 .corre {
   font-size: 20px;
   font-weight: 800;
@@ -101,6 +110,13 @@
 .pageItens {
   width: 100vw;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.centralize {
   display: flex;
   flex-direction: column;
   justify-content: center;

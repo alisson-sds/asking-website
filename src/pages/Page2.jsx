@@ -5,10 +5,10 @@ import bolso from '../images/bolso.png'
 
 const Page2 = () => {
   return (
-    <div style={{ backgroundImage: `url(${bricks})`, backgroundSize: '100%', height: '844px', backgroundSize: '350%' }}>
-      <img className='centerImg' src={bolso} />
+    <div style={{ backgroundImage: `url(${bricks})`, height: '844px', backgroundSize: '350%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+      <img className='centerImg' src={bolso} alt='' />
       <Link to='/page3'>
-        <button className='mainButton' style={{ backgroundColor: '#502923', marginLeft: '100px', marginTop: '40px' }}>
+        <button className='mainButton' style={{ backgroundColor: '#502923', marginTop: '40px' }}>
           CLICA AQUI <br></br>
           RAPIDÃO
         </button>
