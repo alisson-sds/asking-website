@@ -1,19 +1,29 @@
-import { Link } from 'react-router-dom'
 import '../App.css'
-import bricks from '../images/bricks.jpg'
+
+import { Link } from 'react-router-dom'
+
 import bolso from '../images/bolso.png'
+import bricks from '../images/bricks.jpg'
 
 const Page2 = () => {
   return (
-    <div style={{ backgroundImage: `url(${bricks})`, height: '844px', backgroundSize: '350%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+    <div
+      className='centralize'
+      style={{
+        backgroundImage: `url(${bricks})`,
+        backgroundSize: '350%',
+        height: '100%',
+        justifyContent: 'space-evenly',
+      }}
+    >
       <img className='centerImg' src={bolso} alt='' />
       <Link to='/page3'>
-        <button className='mainButton' style={{ backgroundColor: '#502923', marginTop: '40px' }}>
+        <button className='mainButton' style={{ backgroundColor: '#502923' }}>
           CLICA AQUI <br></br>
           RAPIDÃO
         </button>
       </Link>
-    </div >
+    </div>
   )
 }
 
