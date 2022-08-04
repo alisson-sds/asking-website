@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/asking-website/static/css/main.86bda55d.css",
+    "main.js": "/asking-website/static/js/main.d24905c0.js",
+    "static/media/bricks.jpg": "/asking-website/static/media/bricks.f9d579c604f50a2249aa.jpg",
+    "static/media/excavator.jpg": "/asking-website/static/media/excavator.0c2eb35d968153bc320c.jpg",
+    "static/media/buildings.jpg": "/asking-website/static/media/buildings.c4dbc80cca33c1801d7b.jpg",
+    "static/media/exclamation-mark.jpg": "/asking-website/static/media/exclamation-mark.51c70e4d64e9aa313964.jpg",
+    "static/media/beira-rio.png": "/asking-website/static/media/beira-rio.8b7b1a23295cd7ac622b.png",
+    "static/media/bolso.png": "/asking-website/static/media/bolso.9b6c1717149add06a578.png",
+    "static/media/rosa.jpg": "/asking-website/static/media/rosa.09a517154b37e9ba5256.jpg",
+    "static/media/canto.jpg": "/asking-website/static/media/canto.035e1c4dd82349b4459c.jpg",
+    "static/media/bolso-heart2.jpg": "/asking-website/static/media/bolso-heart2.a3885bdc7a4fcec90a09.jpg",
+    "static/media/knife-dude.png": "/asking-website/static/media/knife-dude.5561b51369997b5ad953.png",
+    "static/media/poa.jpg": "/asking-website/static/media/poa.952392ef94325ade6f20.jpg",
+    "index.html": "/asking-website/index.html",
+    "main.86bda55d.css.map": "/asking-website/static/css/main.86bda55d.css.map",
+    "main.d24905c0.js.map": "/asking-website/static/js/main.d24905c0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.86bda55d.css",
+    "static/js/main.d24905c0.js"
+  ]
+}
