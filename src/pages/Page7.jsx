@@ -4,15 +4,9 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import bricks from '../images/bricks.jpg'
-import css from '../images/styles.mp3'
 
 const Page7 = () => {
   const [noButtonTranslate, setNoButtonTranslate] = useState([80, 47])
-  const audio = new Audio(css)
-
-  useEffect(() => {
-    audio.play()
-  }, [])
 
   const handleTranslateButton = () => {
     const x = Math.random() * 95
