@@ -1,11 +1,25 @@
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  width: 100vw;
+  background-color: #d9d9d9;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+}
+
+button {
+  cursor: pointer;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
 }

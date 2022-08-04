@@ -4,13 +4,23 @@ import beira from '../images/beira-rio.png'
 
 const Page9 = () => {
   return (
-    <div style={{ backgroundImage: `url(${beira})`, backgroundSize: '100%', height: '844px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-      <Link to='/'>
-        <button className='corre' style={{ backgroundColor: '#502923', marginTop: '350px' }}>
-          Hehehaw<br></br>
+    <div
+      style={{
+        backgroundImage: `url(${beira})`,
+        backgroundSize: 'cover',
+        height: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}
+    >
+      <Link to='/' style={{ marginTop: '350px' }}>
+        <button className='corre' style={{ backgroundColor: '#502923' }}>
+          Voltar
         </button>
       </Link>
-    </div >
+    </div>
   )
 }
 
