@@ -1,11 +1,7 @@
-import '../App.css'
-
 import { Link } from 'react-router-dom'
-
-import bolso from '../images/bolso.png'
 import bricks from '../images/bricks.jpg'
 
-const Page2 = () => {
+const PageStyle2 = ({ image, nextPage }) => {
   return (
     <div
       className='centralize'
@@ -16,8 +12,8 @@ const Page2 = () => {
         justifyContent: 'space-evenly',
       }}
     >
-      <img className='centerImg' src={bolso} alt='' />
-      <Link to='/page3'>
+      <img className='centerImg' src={image} alt='' />
+      <Link to={nextPage}>
         <button className='mainButton' style={{ backgroundColor: '#502923' }}>
           CLICA AQUI <br></br>
           RAPIDÃO
@@ -27,4 +23,4 @@ const Page2 = () => {
   )
 }
 
-export default Page2
+export default PageStyle2

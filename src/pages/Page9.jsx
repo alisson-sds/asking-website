@@ -16,7 +16,7 @@ const Page9 = () => {
       }}
     >
       <Link to='/' style={{ marginTop: '350px' }}>
-        <button className='corre' style={{ backgroundColor: '#502923' }}>
+        <button className='mainButton' style={{ backgroundColor: '#502923' }}>
           Voltar
         </button>
       </Link>

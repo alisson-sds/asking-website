@@ -1,34 +1,25 @@
-import '../App.css'
-
 import { Link } from 'react-router-dom'
-
 import bricks from '../images/bricks.jpg'
-import buildings from '../images/buildings.jpg'
-import excavator from '../images/excavator.jpg'
 
-const Page1 = () => {
+const PageStyle1 = ({ image, image2, title, text, imageStyle, image2Style, nextPage }) => {
   const gradientImage = (imageUrl) => `linear-gradient(to bottom, transparent 0%, #d9d9d9 95%), url(${imageUrl})`
   const gradientImageMirror = (imageUrl) => `linear-gradient(to top, transparent 0%, #d9d9d9 95%), url(${imageUrl})`
   return (
     <>
       <div
         style={{
-          backgroundImage: gradientImage(buildings),
+          backgroundImage: gradientImage(image),
           backgroundSize: 'cover',
           height: '25%',
-          backgroundPosition: 'center',
+          ...imageStyle,
         }}
       />
       <div className='centralize' style={{ justifyContent: 'space-between', height: '50%' }}>
         <h1 style={{ width: '75%', transform: 'translatey(-125%)' }} className='mainTitles'>
-          BOTA UMA FRASE ENGRAÇADA AQUI
+          {title}
         </h1>
-        <p className='mainText'>
-          Lornyhcpole eu te amoooooem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua Lornyhcpole eu te amoooooem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor
-        </p>
-        <Link to='/page2' style={{ transform: 'translatey(100%)' }}>
+        <p className='mainText'>{text}</p>
+        <Link to={nextPage} style={{ transform: 'translatey(100%)' }}>
           <button className='mainButton' style={{ backgroundImage: `url(${bricks})`, backgroundSize: '100%' }}>
             CLICA AQUI <br />
             RAPIDÃO
@@ -37,14 +28,14 @@ const Page1 = () => {
       </div>
       <div
         style={{
-          backgroundImage: gradientImageMirror(excavator),
+          backgroundImage: gradientImageMirror(image2),
           backgroundSize: 'cover',
-          backgroundPosition: '100% 100%',
           height: '25%',
+          ...image2Style,
         }}
       />
     </>
   )
 }
 
-export default Page1
+export default PageStyle1

@@ -1,21 +1,7 @@
-.App-link {
-  color: #61dafb;
-}
-
-.mainImages {
-  width: 100%;
-}
-
 .centerImg {
   border: 5px solid white;
-  /* margin-top: 50px; */
-  width: 70%;
+  width: 75%;
   height: 350px;
-}
-
-.mainDivAsk {
-  background-color: #d9d9d9;
-  height: 100%;
 }
 
 .mainTitles {
@@ -31,31 +17,10 @@
 
 .attention {
   font-size: 40px;
-  font-family: 'Montserrat', sans-serif;
   text-align: center;
   font-weight: 800;
   margin-bottom: 100px;
   height: 65px;
-  color: #502923;
-}
-
-.attentionText {
-  height: 150px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 22px;
-  font-weight: bold;
-  margin-left: 40px;
-  margin-right: 40px;
-  color: #502923;
-}
-
-.askingText {
-  height: 150px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 22px;
-  font-weight: bold;
-  margin-left: 40px;
-  margin-right: 40px;
   color: #502923;
 }
 
@@ -70,25 +35,13 @@
 .yesButton {
   font-size: 20px;
   font-weight: 800;
-  font-family: 'Montserrat', sans-serif;
   border: 5px solid white;
   color: white;
   justify-content: center;
   padding: 10px 50px;
 }
 
-.corre {
-  font-size: 20px;
-  font-weight: 800;
-  font-family: 'Montserrat', sans-serif;
-  border: 5px solid white;
-  color: white;
-  justify-content: center;
-  padding: 5px 25px;
-}
-
-.pageItens {
-  width: 100vw;
+.pageItems {
   height: 100vh;
   display: flex;
   flex-direction: column;

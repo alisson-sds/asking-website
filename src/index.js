@@ -1,30 +1,72 @@
+import './index.css'
+import './App.css'
+
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './index.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Page9 from './pages/Page9'
-import Page8 from './pages/Page8'
+
+import PageStyle1 from './components/PageStyle1'
+import PageStyle2 from './components/PageStyle2'
+import bolsoheart2 from './images/bolso-heart2.jpg'
+import bolso from './images/bolso.png'
+import buildings from './images/buildings.jpg'
+import excavator from './images/excavator.jpg'
+import exclamation from './images/exclamation-mark.jpg'
+import knifeDude from './images/knife-dude.png'
 import Page7 from './pages/Page7'
-import Page6 from './pages/Page6'
-import Page5 from './pages/Page5'
-import Page4 from './pages/Page4'
-import Page3 from './pages/Page3'
-import Page2 from './pages/Page2'
-import Page1 from './pages/Page1'
+import Page9 from './pages/Page9'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Page1 />} />
-        <Route path='/page2' element={<Page2 />} />
-        <Route path='/page3' element={<Page3 />} />
-        <Route path='/page4' element={<Page4 />} />
-        <Route path='/page5' element={<Page5 />} />
-        <Route path='/page6' element={<Page6 />} />
+        <Route
+          path='/'
+          element={
+            <PageStyle1
+              image={buildings}
+              image2={excavator}
+              imageStyle={{ backgroundPositionY: 'center' }}
+              image2Style={{ backgroundPositionY: '100%' }}
+              title='PREVEJO UM TITULO BEM CRINGE'
+              text='Piadas muito divertidas loremm ipsum Piadas muito divertidas loremm ipsumPiadas muito divertidas loremm ipsumPiadas muito divertidas loremm ipsum'
+              nextPage='/page2'
+            />
+          }
+        />
+        <Route path='/page2' element={<PageStyle2 image={bolso} nextPage='/page3' />} />
+        <Route
+          path='/page3'
+          element={
+            <PageStyle1
+              image={bolsoheart2}
+              image2={bolso}
+              imageStyle={{ backgroundPositionY: '70%' }}
+              image2Style={{ backgroundPositionY: '-200%', backgroundSize: '100%' }}
+              title='PREVEJO UM TITULO BEM CRINGE'
+              text='Piadas muito divertidas loremm ipsum Piadas muito divertidas loremm ipsumPiadas muito divertidas loremm ipsumPiadas muito divertidas loremm ipsum'
+              nextPage='/page4'
+            />
+          }
+        />
+        <Route path='/page4' element={<PageStyle2 image={bolso} nextPage='/page5' />} />
+        <Route
+          path='/page5'
+          element={
+            <PageStyle1
+              image={exclamation}
+              image2={knifeDude}
+              imageStyle={{ backgroundPositionY: '70%' }}
+              image2Style={{ backgroundSize: '100%' }}
+              title='ATENÇÃO!'
+              text='Vou te fazer uma pergunta e antes de responder, lembra que tenho uma faca no porta-luvas'
+              nextPage='/page6'
+            />
+          }
+        />
+        <Route path='/page6' element={<PageStyle2 image={bolso} nextPage='/page7' />} />
         <Route path='/page7' element={<Page7 />} />
-        <Route path='/page8' element={<Page8 />} />
         <Route path='/page9' element={<Page9 />} />
       </Routes>
     </BrowserRouter>
